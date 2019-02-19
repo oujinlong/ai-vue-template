@@ -1,0 +1,54 @@
+// # Mixins
+// ====================
+
+
+// 文本省略
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// pointer
+.hand{
+  cursor: pointer;
+}
+// 清除浮动
+.clearfloat {
+  zoom: 1;
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+  }
+}
+// 字体文件
+.font-regular{
+  font-family: 'PingFangSC-Regular';
+}
+.font-medium{
+  font-family: 'PingFangSC-Medium';
+}
+.hidden{
+  display: none;
+}
+
+.clear{
+  overflow: hidden;
+}
+.float-left{
+  float: left
+}
+.float-right{
+  float: right;
+}
+.text-size--14 {
+  font-size: 14px;
+}
+.text-size--15 {
+  font-size: 15px;
+}
+.text-size--12{
+  font-size: 12px;
+}

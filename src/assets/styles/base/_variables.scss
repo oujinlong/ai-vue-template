@@ -1,0 +1,203 @@
+// # Variables
+// ========================================
+
+// ## Colors
+// ------------------------------
+
+// - Start with assigning color names to specific hex values.
+$pure-white:                #ffffff;
+$pure-black:                #000000;
+$pure-red:                  #d9534f;
+$pure-orange:               #f0ad4e;
+$pure-yellow:               #ffd500;
+$pure-green:                #5cb85c;
+$pure-blue:                 #337ab7; // #0275d8;
+$pure-teal:                 #00b9eb; // #5bc0de;
+$pure-pink:                 #ff5b77;
+$pure-purple:               #697EFF;
+$light-purple:              #3F86F6;
+$grey-purple:               #5DAFE6;
+$warning-light:                  #FFF8EB;
+
+
+// - Blue
+$blue-lighter:              #89CCFF;
+$blue-light:                #58B7FF;
+$blue:                      #20A0FF;
+$blue-dark:                 #1D8CE0;
+$blue-darker:               #337ab7;
+$blue-purple:               #856AF8;
+
+
+// - Black
+$black-lighter:             #475669;
+$black-light:               #324057;
+$black:                     #1F2D3D;
+$black-dark:                #1F2D3D;
+$black-darker:              #1F2D3D;
+$black-brown:               #202646;
+
+// - Silver
+$silver-lighter:            #C0CCDA;
+$silver-light:              #99A9BF;
+$silver:                    #8492A6;
+$silver-dark:               #8492A6;
+$silver-darker:             #8492A6;
+
+// - Gray
+$gray-lighter:              #EFF2F7;
+$gray-light:                #E5E9F2;
+$gray:                      #D3DCE6;
+$gray-dark:                 #D3DCE6;
+$gray-darker:               #D3DCE6;
+$gray-unactivated:          #BBBEC4;
+$gray-border:               #DDDEE1;
+$gray-fill:                 #E9EAEC;
+$gray-edit:                 #F8F8F9;
+$gray-text:                 #80838F;
+$gray-bgd:                  #596071;
+
+// - White
+$white-lighter:             #FFFFFF;
+$white-light:               #FFFFFF;
+$white:                     #FFFFFF;
+$white-dark:                #F8F9FB;
+$white-darker:              #F0F1F3;
+$white-grey:                #DDDEE1;
+
+// - Main color
+//   + #2f4050;
+//   + #373a3c;
+$main-lighter:              #515e6a;
+$main-light:                #3e4c59;
+$main:                      #3D4454;
+$main-dark:                 #5e6576;
+$main-darker:               #24313c;
+$main-text-light:           #a2a6af;
+$main-text-dark:            #4b546c;
+$main-text:                  #243a5d;
+// - Brand color------agent-custom
+$primary:                   #56a0d6;
+$primary-light:             #8999FB;
+$primary-dark:              #4A5DD1;
+$primary-lighter:           #F4F6FF;
+$success:                   #57B55B;
+$success-lighter:           #EAFFEB;
+$warning:                   #EEA72D;
+$danger:                    #F04E4E;
+$info:                      #81D1F4;
+$infoBtn:                   #BBBEC4;
+$infoBtn-light:             #DDDEE1;
+$infoBtn-dark:              #80838F;
+
+// ## Module
+// ------------------------------
+
+// - Selection
+$selection-color:                 $white; // inherit;
+$selection-background:            $blue-lighter;
+
+// - Link
+$link-color:                      $primary; // inherit;
+$link-decoration:                 none;
+$link-hover-color:                $primary-dark; // inherit;
+$link-hover-decoration:           none;
+
+// - Brand
+$brand-color:                     $white;
+$brand-hover-color:               $white;
+
+// - Menu
+$menu-item-color:                 $gray;
+$menu-item-background:            transparent;
+$menu-item-hover-color:           $white;
+$menu-item-hover-background:      $primary;
+$menu-item-active-color:          $white;
+$menu-item-active-background:     $main-dark;
+$menu-title-color:                darken($menu-item-color, 30%);
+$menu-title-background:           $menu-item-hover-background;
+$menu-border-background:          $main-dark;
+$menu-image-background:           $main-light;
+$menu-image-border:               .0625rem solid $main-lighter;
+
+// - HTML
+// $html-color:                   $white;
+$html-background:                 $main-darker;
+
+// - Body
+$body-color:                      $white;
+$body-background:                 $white-dark;
+$body-font-family:                'PingFangSC-Regular', -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+// - Header
+$header-height:                   4.4rem;
+$header-sub-width:                4.4rem;
+$header-item-color:               $white;
+$header-max-info-width:           10rem;
+$header-min-info-width:           5rem;
+$header-arrow-width:              1.5rem;
+$header-logo-width:               2.5rem;
+$header-logout-width:             2rem;
+$header-info-text-font:           20px;
+
+// - Sidebar
+$sidebar-width:                   10rem;
+$sidebar-min-width:               4.4rem;
+$sidebar-sub-width:               4.4rem;
+$sidebar-item-height:             $sidebar-min-width;
+$sidebar-enable-arrow:            true;
+$sidebar-enable-radius:           false;
+$sidebar-item-hover-background:   $main-lighter;
+
+// - Content
+$content-margin:                  .3125rem;
+$content-color:                   $black-brown;
+$content-background:              $white-dark;
+
+// - Login
+$login-form-color:                $main;
+$login-form-background:           $gray-lighter;
+
+// - Alert
+$alert-warning-color: $warning;
+
+// - Button
+$btn-primary-color: $primary;
+$btn-primary-active-color: $primary-dark;
+$btn-primary-hover-color: $primary-light;
+$btn-info-color: $infoBtn;
+$btn-info-active-color: $infoBtn-dark;
+$btn-info-hover-color: $infoBtn-light;
+
+// - Text
+$text-title:                 #494E60 !default;
+$text-subtitle:              #80838F !default;
+
+// - Path
+$main-style-to-assets: "../../assets" !default;
+
+// ## Icons
+// ------------------------------
+
+
+
+$icomoon-font-path: "../fonts" !default;
+
+
+$icon-logout: \e900;
+$icon-menu-comment: \e901;
+$icon-menu-food: \e902;
+$icon-menu-role: \e903;
+$icon-menu-setting: \e904;
+$icon-menu-sum: \e905;
+$icon-menu-user: \e906;
+
+
+
+
+
+
+
+
+
+
