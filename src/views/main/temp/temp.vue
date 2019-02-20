@@ -7,11 +7,13 @@
     <div class="copyright" style="margin-top: 15px">
       @copyright Asiainfo
     </div>
-    <div style="color: #1D8CE0" >
-      <a href='http://element-cn.eleme.io/#/zh-CN' target=”_blank”>
+    <div style="margin-top: 20px">
+      <el-button>Element UI:</el-button>
+      <a href='http://element-cn.eleme.io/#/zh-CN' target=”_blank” style="margin-left: 20px">
         element-ui docs
       </a>
     </div>
+
   </div>
 </template>
 
@@ -36,5 +38,5 @@ export default {
 </script>
 
 <style scoped>
-@import "style/temp.scss";
+  @import "style/temp.scss";
 </style>
