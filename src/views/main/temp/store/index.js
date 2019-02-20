@@ -1,5 +1,5 @@
 /**
- * Created by oujinlong on 2017/12/15.
+ * Created by oujinlong on 2019/2/19.
  */
 import storage from '../../../../libraries/utils/storage'
 /**
@@ -7,7 +7,7 @@ import storage from '../../../../libraries/utils/storage'
  * @type {Object}
  */
 const state = {
-  proofInfo: storage.get('proofInfo') ? JSON.parse(storage.get('proofInfo')) : {}
+  data: storage.get('data') ? JSON.parse(storage.get('data')) : {}
 }
 
 /**
@@ -23,9 +23,9 @@ const getters = {
  * @type {Object}
  */
 const mutations = {
-  SET_PROOF_INFO (state, proofInfo) {
-    state.proofInfo = proofInfo
-    storage.set('proofInfo',JSON.stringify(proofInfo))
+  SET_PROOF_INFO (state, data) {
+    state.data = data
+    storage.set('data', JSON.stringify(data))
   }
 }
 
