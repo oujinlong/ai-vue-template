@@ -7,6 +7,11 @@
     <div class="copyright" style="margin-top: 15px">
       @copyright Asiainfo
     </div>
+    <div style="color: #1D8CE0" >
+      <a href='http://element-cn.eleme.io/#/zh-CN' target=”_blank”>
+        element-ui docs
+      </a>
+    </div>
   </div>
 </template>
 
@@ -19,7 +24,8 @@ export default {
     return {}
   },
   props: {},
-  methods: {},
+  methods: {
+  },
   mounted () {
   },
   computed: {

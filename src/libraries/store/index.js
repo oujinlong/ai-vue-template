@@ -24,8 +24,6 @@ export default new Vuex.Store({
       state.menus = []
       state.user = undefined
       storage.set('token', '')
-      storage.set('menus', undefined)
-      storage.set('user', undefined)
     }
   },
   getters: {
@@ -34,7 +32,7 @@ export default new Vuex.Store({
     menus: state => state.menus
   },
   actions: {
-    checkToken: ((store) => {
+    checkToken: (store) => {
       let getters = store.getters
       return new Promise((resolve, reject) => {
         if (!getters.token) {
@@ -43,6 +41,6 @@ export default new Vuex.Store({
           return resolve(true)
         }
       })
-    })
+    }
   }
 })
