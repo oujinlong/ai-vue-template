@@ -9,9 +9,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    token: storage.get('token') || '',
-    menus: storage.get('menus') ? JSON.parse(storage.get('menus')) : undefined,
-    user: storage.get('user') ? JSON.parse(storage.get('user')) : undefined
+    token: storage.get('token') || ''
   },
   modules: modules,
   mutations: {
@@ -21,20 +19,14 @@ export default new Vuex.Store({
     },
     CLEAR_TOKEN (state) {
       state.token = ''
-      state.menus = []
-      state.user = undefined
       storage.set('token', '')
-      storage.set('menus', undefined)
-      storage.set('user', undefined)
     }
   },
   getters: {
-    token: state => state.token,
-    user: state => state.user,
-    menus: state => state.menus
+    token: state => state.token
   },
   actions: {
-    checkToken: ((store) => {
+    checkToken: (store) => {
       let getters = store.getters
       return new Promise((resolve, reject) => {
         if (!getters.token) {
@@ -43,6 +35,6 @@ export default new Vuex.Store({
           return resolve(true)
         }
       })
-    })
+    }
   }
 })
